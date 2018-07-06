@@ -99,3 +99,40 @@ dist/index.html
    </body>
   </html>
 ```
+
+package.json
+
+```json
+{
+    "name": "webpack-demo",
+    "version": "1.0.0",
+    "description": "",
++   "private": true,
+-   "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "webpack": "^4.0.1",
+      "webpack-cli": "^2.0.9"
+    },
+    "dependencies": {}
+  }
+```
+
+webpack
+
+```bash
+>lab1/webpack-demo$ npx webpack
+Hash: 384ce94190f6b9fdfed0
+Version: webpack 4.15.1
+Time: 145ms
+Built at: 2018-07-06 16:31:57
+  Asset      Size  Chunks             Chunk Names
+main.js  1.03 KiB       0  [emitted]  main
+[0] ./src/index.js 281 bytes {0} [built]
+
+```
