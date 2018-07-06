@@ -1,6 +1,6 @@
 # Lab1 - create project and build with webpack
 
-## Step1 initial npm project
+## Step 1. initial npm project
 
 ```bash
 mkdir webpack-demo && cd webpack-demo
@@ -8,7 +8,7 @@ npm init -y
 npm install webpack webpack-cli --save-dev
 ```
 
-## Step2 copy project files
+## Step 2. copy project files
 
 ```bash
 webpack-demo
@@ -46,7 +46,7 @@ index.html
 </html>
 ```
 
-## Step3 Creating a Bundle using webpack
+## Step 3. Creating a Bundle using webpack
 
 - project
 
@@ -137,7 +137,7 @@ main.js  1.03 KiB       0  [emitted]  main
 
 ```
 
-## Step4 Using webpack configuration
+## Step 4. Using webpack configuration
 
 - project
 
@@ -169,7 +169,7 @@ module.exports = {
 npx webpack --config webpack.config.js
 ```
 
-## Setup5 NPM Scripts
+## Step 5. NPM Scripts
 
 package.json
 
