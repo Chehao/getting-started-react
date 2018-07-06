@@ -1,5 +1,12 @@
 # Lab1 - create project and build with webpack
 
+- [Step 1. initial npm project](#step-1-initial-npm-project)
+- [Step 2. copy project files](#step-2-copy-project-files)
+- [Step 3. Creating a Bundle using webpack](#step-3-creating-a-bundle-using-webpack)
+- [Step 4. Using webpack configuration](#step-4-using-webpack-configuration)
+- [Step 5. NPM Scripts](#step-5-npm-scripts)
+
+
 ## Step 1. initial npm project
 
 ```bash
