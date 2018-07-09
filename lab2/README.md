@@ -116,3 +116,7 @@ index.html
 ```bash
 npm run build
 ```
+
+## Step 7. For further, check webpack official guides
+
+- [Using webpack-dev-server](https://webpack.js.org/guides/development/#using-webpack-dev-server)
