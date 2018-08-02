@@ -1,4 +1,4 @@
-# Lab 4 - Component Lifecycle and avoid render() called and real dom tree rendor
+# Lab 4 - Component Lifecycle - avoid render() called each time. find how react rendor dom tree
 
 ## Lab 4.1 Component's render() was invoked when state change or props change
 
