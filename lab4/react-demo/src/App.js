@@ -2,18 +2,33 @@ import React, { Component } from 'react'
 import Children from './Children';
 
 class App extends Component {
+  
   state = {
-    isOpen: false
+    date: new Date()
   }
-  onclick = (e) => {
-    this.setState((preState) => ({isOpen: !preState.isOpen}))
+
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    );
   }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  }
+  
   render() {
     return (
       <div className="App">
-        <Children name="clidren1" />
-        <Children name="clidren2" />
-        <button onClick={this.onclick} >toggle</button>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        <Children name="child 1" />
       </div>
     );
   }
