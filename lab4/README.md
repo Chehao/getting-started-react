@@ -23,7 +23,7 @@ you will find browser open http://localhost:3000 when start server.
 1. Open F12 or command+option+i to see the console.
 2. See timer change, console will print message from lifecycle hook method.
 
-You can find out child 1 call render every second, even if there's props are unchange.
+You can find out child 1 called render() each second, even if there's props are unchange.
 
 But even if Children componet's render() are called, Browser's DOM tree doesn't change.
 
