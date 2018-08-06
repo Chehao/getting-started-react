@@ -55,6 +55,8 @@ yarn add react-redux redux-thunk redux
 yarn add -D redux-mock-store
 yarn add -D react-test-renderer
 yarn add -D enzyme jest-enzyme enzyme-adapter-react-16
+yarn add isomorphic-fetch
+yarn add -D nock
 ```
 
 ### Config jest
