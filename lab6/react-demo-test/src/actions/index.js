@@ -1,4 +1,4 @@
-import fetch from 'isomorphic-fetch'
+import 'cross-fetch/polyfill'
 
 let nextTodoId = 0
 export const addTodo = text => ({
@@ -31,12 +31,12 @@ export const addTodoAsyncAndUpdateFilter = (filter) => (dispatch, getState) => {
   return fetch('http://localhost/api/update',{
     method: 'POST',
     headers:{
-      'accept': 'application/json'
+      'content-type': 'application/json'
     }
   })
-  .then(res => res.body())
-  .then(response => {
-    dispatch(addTodo(response.text))
+  .then(res => res.json())
+  .then(data => {
+    dispatch(addTodo(data.text))
   })
   .catch(error => console.error('Error:', error))
 }
