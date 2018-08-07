@@ -2,7 +2,7 @@
 
 ## Lab 5.1
 
-### Step 1. create react project
+### Step 1. install react project
 
 if you don't install yarn 
 
@@ -10,20 +10,16 @@ if you don't install yarn
 npm install -g yarn
 ```
 
-create project
+install project
 
 ```bash
-npx create-react-app react-redux-demo
 cd react-redux-demo
+yarn install
 # open with vs code
-code .
 ```
 
-### Step 2. Remove files
-
-install react
+### Step 2. Run
 
 ```bash
-npm install --save react-redux redux
-
+yarn start
 ```

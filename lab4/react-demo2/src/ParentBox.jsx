@@ -8,10 +8,12 @@ export default class ParentBox extends Component {
     super(props);
     this.addData = this.addData.bind(this);
     this.Modify = this.Modify.bind(this);
+    
   }
 
   state = {
-    data: []
+    data: [],
+    todoInput: ''
   };
   static props = {};
  
@@ -34,11 +36,27 @@ export default class ParentBox extends Component {
     this.setState({ data: copy });
   }
 
+  handleAddTodo = () => {
+    this.setState((preState) => {
+      return { 
+        data: [...preState.data, preState.todoInput],
+        todoInput: ''
+      };
+    })
+  }
+
+  handleChangeInput = (event) => {
+    const { name ,value } = event.target;
+    this.setState({todoInput: value});
+  }
+
   render() {
     console.log(`>> ${this.props.title} render`);
     return (
       <div className="commentBox">
         <h1>{this.props.title}</h1>
+        <input type="text" value={this.state.todoInput} onChange={this.handleChangeInput} />
+        <button onClick={this.handleAddTodo}>+</button>
         <hr />
         <Children data={this.state.data} 
           onModify={this.Modify} 
