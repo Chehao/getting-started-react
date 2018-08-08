@@ -39,7 +39,7 @@ it('3. render homework TodoList', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('4. shallow render TodoList', ()=>{
+it('4. shallow render TodoList should contains homework with id 7', ()=>{
   const wrapper = shallow(<TodoList todos={[
     {
       id: 7,
