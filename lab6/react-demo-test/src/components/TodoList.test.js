@@ -29,7 +29,7 @@ it('3. render homework TodoList', () => {
           },{
             id: 7,
             completed: false,
-            text: 'homework3'
+            text: 'homework6'
           }
         ]}
         toggleTodo={() => {}}
